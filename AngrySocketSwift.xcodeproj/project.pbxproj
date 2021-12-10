@@ -1,0 +1,795 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1514D2D05C0C5FF4ABCFABCF /* Pods_AngrySocketSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B0795512116CF85AF0069BC /* Pods_AngrySocketSwift.framework */; };
+		5182FAA526BBCDA200231C65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5182FAA426BBCDA200231C65 /* AppDelegate.swift */; };
+		5182FAA726BBCDA200231C65 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5182FAA626BBCDA200231C65 /* SceneDelegate.swift */; };
+		5182FAA926BBCDA200231C65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5182FAA826BBCDA200231C65 /* ViewController.swift */; };
+		5182FAAC26BBCDA200231C65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5182FAAA26BBCDA200231C65 /* Main.storyboard */; };
+		5182FAAE26BBCDA300231C65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5182FAAD26BBCDA300231C65 /* Assets.xcassets */; };
+		5182FAB126BBCDA300231C65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5182FAAF26BBCDA300231C65 /* LaunchScreen.storyboard */; };
+		5182FABC26BBCDA300231C65 /* AngrySocketSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5182FABB26BBCDA300231C65 /* AngrySocketSwiftTests.swift */; };
+		5182FAC626BBCDA300231C65 /* AngrySocketSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5182FAC526BBCDA300231C65 /* AngrySocketSwiftUITests.swift */; };
+		51E8D16E26C20016009B5531 /* AES256Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E8D16D26C20016009B5531 /* AES256Util.swift */; };
+		51E8D17026C242E0009B5531 /* AES256Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E8D16F26C242E0009B5531 /* AES256Test.swift */; };
+		B7BC2536DA2AF94FC121DCB6 /* Pods_AngrySocketSwift_AngrySocketSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3476812DC79D1EC7442F71 /* Pods_AngrySocketSwift_AngrySocketSwiftUITests.framework */; };
+		C3A77031BE89EF409AB55925 /* Pods_AngrySocketSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16AA08BE87C4CCF12BC9D85E /* Pods_AngrySocketSwiftTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5182FAB826BBCDA300231C65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5182FA9926BBCDA200231C65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5182FAA026BBCDA200231C65;
+			remoteInfo = AngrySocketSwift;
+		};
+		5182FAC226BBCDA300231C65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5182FA9926BBCDA200231C65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5182FAA026BBCDA200231C65;
+			remoteInfo = AngrySocketSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0916F3D8F1F8B9357387A985 /* Pods-AngrySocketSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AngrySocketSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-AngrySocketSwiftTests/Pods-AngrySocketSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		16AA08BE87C4CCF12BC9D85E /* Pods_AngrySocketSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AngrySocketSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5182FAA126BBCDA200231C65 /* AngrySocketSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AngrySocketSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5182FAA426BBCDA200231C65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5182FAA626BBCDA200231C65 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5182FAA826BBCDA200231C65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5182FAAB26BBCDA200231C65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5182FAAD26BBCDA300231C65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5182FAB026BBCDA300231C65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5182FAB226BBCDA300231C65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5182FAB726BBCDA300231C65 /* AngrySocketSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AngrySocketSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5182FABB26BBCDA300231C65 /* AngrySocketSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngrySocketSwiftTests.swift; sourceTree = "<group>"; };
+		5182FAC126BBCDA300231C65 /* AngrySocketSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AngrySocketSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5182FAC526BBCDA300231C65 /* AngrySocketSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngrySocketSwiftUITests.swift; sourceTree = "<group>"; };
+		51E8D16D26C20016009B5531 /* AES256Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256Util.swift; sourceTree = "<group>"; };
+		51E8D16F26C242E0009B5531 /* AES256Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256Test.swift; sourceTree = "<group>"; };
+		7EBD233AEEC93738440D3D7A /* Pods-AngrySocketSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AngrySocketSwift.debug.xcconfig"; path = "Target Support Files/Pods-AngrySocketSwift/Pods-AngrySocketSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		7ED5CB292BBC1867AF042C56 /* Pods-AngrySocketSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AngrySocketSwiftTests.release.xcconfig"; path = "Target Support Files/Pods-AngrySocketSwiftTests/Pods-AngrySocketSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		9B0795512116CF85AF0069BC /* Pods_AngrySocketSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AngrySocketSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C79E4BA01FA76C7EB7ECBD9 /* Pods-AngrySocketSwift-AngrySocketSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AngrySocketSwift-AngrySocketSwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-AngrySocketSwift-AngrySocketSwiftUITests/Pods-AngrySocketSwift-AngrySocketSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CD3476812DC79D1EC7442F71 /* Pods_AngrySocketSwift_AngrySocketSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AngrySocketSwift_AngrySocketSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D325C5A5C2ED14377410E212 /* Pods-AngrySocketSwift-AngrySocketSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AngrySocketSwift-AngrySocketSwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-AngrySocketSwift-AngrySocketSwiftUITests/Pods-AngrySocketSwift-AngrySocketSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F904163D8E1F14B9711499DA /* Pods-AngrySocketSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AngrySocketSwift.release.xcconfig"; path = "Target Support Files/Pods-AngrySocketSwift/Pods-AngrySocketSwift.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5182FA9E26BBCDA200231C65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1514D2D05C0C5FF4ABCFABCF /* Pods_AngrySocketSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5182FAB426BBCDA300231C65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3A77031BE89EF409AB55925 /* Pods_AngrySocketSwiftTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5182FABE26BBCDA300231C65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7BC2536DA2AF94FC121DCB6 /* Pods_AngrySocketSwift_AngrySocketSwiftUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30073116F683655D85EB5614 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7EBD233AEEC93738440D3D7A /* Pods-AngrySocketSwift.debug.xcconfig */,
+				F904163D8E1F14B9711499DA /* Pods-AngrySocketSwift.release.xcconfig */,
+				9C79E4BA01FA76C7EB7ECBD9 /* Pods-AngrySocketSwift-AngrySocketSwiftUITests.debug.xcconfig */,
+				D325C5A5C2ED14377410E212 /* Pods-AngrySocketSwift-AngrySocketSwiftUITests.release.xcconfig */,
+				0916F3D8F1F8B9357387A985 /* Pods-AngrySocketSwiftTests.debug.xcconfig */,
+				7ED5CB292BBC1867AF042C56 /* Pods-AngrySocketSwiftTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5182FA9826BBCDA200231C65 = {
+			isa = PBXGroup;
+			children = (
+				51E8D16A26C1FFCF009B5531 /* AES256 */,
+				5182FAA326BBCDA200231C65 /* AngrySocketSwift */,
+				5182FABA26BBCDA300231C65 /* AngrySocketSwiftTests */,
+				5182FAC426BBCDA300231C65 /* AngrySocketSwiftUITests */,
+				5182FAA226BBCDA200231C65 /* Products */,
+				30073116F683655D85EB5614 /* Pods */,
+				DBA212F3E481E9F588CB6BBB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5182FAA226BBCDA200231C65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5182FAA126BBCDA200231C65 /* AngrySocketSwift.app */,
+				5182FAB726BBCDA300231C65 /* AngrySocketSwiftTests.xctest */,
+				5182FAC126BBCDA300231C65 /* AngrySocketSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5182FAA326BBCDA200231C65 /* AngrySocketSwift */ = {
+			isa = PBXGroup;
+			children = (
+				5182FAA426BBCDA200231C65 /* AppDelegate.swift */,
+				5182FAA626BBCDA200231C65 /* SceneDelegate.swift */,
+				5182FAA826BBCDA200231C65 /* ViewController.swift */,
+				5182FAAA26BBCDA200231C65 /* Main.storyboard */,
+				5182FAAD26BBCDA300231C65 /* Assets.xcassets */,
+				5182FAAF26BBCDA300231C65 /* LaunchScreen.storyboard */,
+				5182FAB226BBCDA300231C65 /* Info.plist */,
+			);
+			path = AngrySocketSwift;
+			sourceTree = "<group>";
+		};
+		5182FABA26BBCDA300231C65 /* AngrySocketSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				5182FABB26BBCDA300231C65 /* AngrySocketSwiftTests.swift */,
+			);
+			path = AngrySocketSwiftTests;
+			sourceTree = "<group>";
+		};
+		5182FAC426BBCDA300231C65 /* AngrySocketSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5182FAC526BBCDA300231C65 /* AngrySocketSwiftUITests.swift */,
+			);
+			path = AngrySocketSwiftUITests;
+			sourceTree = "<group>";
+		};
+		51E8D16A26C1FFCF009B5531 /* AES256 */ = {
+			isa = PBXGroup;
+			children = (
+				51E8D16D26C20016009B5531 /* AES256Util.swift */,
+				51E8D16F26C242E0009B5531 /* AES256Test.swift */,
+			);
+			path = AES256;
+			sourceTree = "<group>";
+		};
+		DBA212F3E481E9F588CB6BBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B0795512116CF85AF0069BC /* Pods_AngrySocketSwift.framework */,
+				CD3476812DC79D1EC7442F71 /* Pods_AngrySocketSwift_AngrySocketSwiftUITests.framework */,
+				16AA08BE87C4CCF12BC9D85E /* Pods_AngrySocketSwiftTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5182FAA026BBCDA200231C65 /* AngrySocketSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5182FAC926BBCDA300231C65 /* Build configuration list for PBXNativeTarget "AngrySocketSwift" */;
+			buildPhases = (
+				EA9964FDEC0BEBB51D01148D /* [CP] Check Pods Manifest.lock */,
+				5182FA9D26BBCDA200231C65 /* Sources */,
+				5182FA9E26BBCDA200231C65 /* Frameworks */,
+				5182FA9F26BBCDA200231C65 /* Resources */,
+				106738CB6C961BB385A24F21 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AngrySocketSwift;
+			productName = AngrySocketSwift;
+			productReference = 5182FAA126BBCDA200231C65 /* AngrySocketSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5182FAB626BBCDA300231C65 /* AngrySocketSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5182FACC26BBCDA300231C65 /* Build configuration list for PBXNativeTarget "AngrySocketSwiftTests" */;
+			buildPhases = (
+				4D913FBF7FCD70119B2FEF17 /* [CP] Check Pods Manifest.lock */,
+				5182FAB326BBCDA300231C65 /* Sources */,
+				5182FAB426BBCDA300231C65 /* Frameworks */,
+				5182FAB526BBCDA300231C65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5182FAB926BBCDA300231C65 /* PBXTargetDependency */,
+			);
+			name = AngrySocketSwiftTests;
+			productName = AngrySocketSwiftTests;
+			productReference = 5182FAB726BBCDA300231C65 /* AngrySocketSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5182FAC026BBCDA300231C65 /* AngrySocketSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5182FACF26BBCDA300231C65 /* Build configuration list for PBXNativeTarget "AngrySocketSwiftUITests" */;
+			buildPhases = (
+				4734C23D2F37842C2888E514 /* [CP] Check Pods Manifest.lock */,
+				5182FABD26BBCDA300231C65 /* Sources */,
+				5182FABE26BBCDA300231C65 /* Frameworks */,
+				5182FABF26BBCDA300231C65 /* Resources */,
+				4002CB354371854FF320B2F1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5182FAC326BBCDA300231C65 /* PBXTargetDependency */,
+			);
+			name = AngrySocketSwiftUITests;
+			productName = AngrySocketSwiftUITests;
+			productReference = 5182FAC126BBCDA300231C65 /* AngrySocketSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5182FA9926BBCDA200231C65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					5182FAA026BBCDA200231C65 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					5182FAB626BBCDA300231C65 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 5182FAA026BBCDA200231C65;
+					};
+					5182FAC026BBCDA300231C65 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 5182FAA026BBCDA200231C65;
+					};
+				};
+			};
+			buildConfigurationList = 5182FA9C26BBCDA200231C65 /* Build configuration list for PBXProject "AngrySocketSwift" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5182FA9826BBCDA200231C65;
+			productRefGroup = 5182FAA226BBCDA200231C65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5182FAA026BBCDA200231C65 /* AngrySocketSwift */,
+				5182FAB626BBCDA300231C65 /* AngrySocketSwiftTests */,
+				5182FAC026BBCDA300231C65 /* AngrySocketSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5182FA9F26BBCDA200231C65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5182FAB126BBCDA300231C65 /* LaunchScreen.storyboard in Resources */,
+				5182FAAE26BBCDA300231C65 /* Assets.xcassets in Resources */,
+				5182FAAC26BBCDA200231C65 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5182FAB526BBCDA300231C65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5182FABF26BBCDA300231C65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		106738CB6C961BB385A24F21 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AngrySocketSwift/Pods-AngrySocketSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AngrySocketSwift/Pods-AngrySocketSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AngrySocketSwift/Pods-AngrySocketSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4002CB354371854FF320B2F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AngrySocketSwift-AngrySocketSwiftUITests/Pods-AngrySocketSwift-AngrySocketSwiftUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AngrySocketSwift-AngrySocketSwiftUITests/Pods-AngrySocketSwift-AngrySocketSwiftUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AngrySocketSwift-AngrySocketSwiftUITests/Pods-AngrySocketSwift-AngrySocketSwiftUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4734C23D2F37842C2888E514 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AngrySocketSwift-AngrySocketSwiftUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D913FBF7FCD70119B2FEF17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AngrySocketSwiftTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA9964FDEC0BEBB51D01148D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AngrySocketSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5182FA9D26BBCDA200231C65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5182FAA926BBCDA200231C65 /* ViewController.swift in Sources */,
+				5182FAA526BBCDA200231C65 /* AppDelegate.swift in Sources */,
+				5182FAA726BBCDA200231C65 /* SceneDelegate.swift in Sources */,
+				51E8D17026C242E0009B5531 /* AES256Test.swift in Sources */,
+				51E8D16E26C20016009B5531 /* AES256Util.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5182FAB326BBCDA300231C65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5182FABC26BBCDA300231C65 /* AngrySocketSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5182FABD26BBCDA300231C65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5182FAC626BBCDA300231C65 /* AngrySocketSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5182FAB926BBCDA300231C65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5182FAA026BBCDA200231C65 /* AngrySocketSwift */;
+			targetProxy = 5182FAB826BBCDA300231C65 /* PBXContainerItemProxy */;
+		};
+		5182FAC326BBCDA300231C65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5182FAA026BBCDA200231C65 /* AngrySocketSwift */;
+			targetProxy = 5182FAC226BBCDA300231C65 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5182FAAA26BBCDA200231C65 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5182FAAB26BBCDA200231C65 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5182FAAF26BBCDA300231C65 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5182FAB026BBCDA300231C65 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5182FAC726BBCDA300231C65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5182FAC826BBCDA300231C65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5182FACA26BBCDA300231C65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EBD233AEEC93738440D3D7A /* Pods-AngrySocketSwift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XM9NMWX24Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AngrySocketSwift/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onnuriinfotek.AngrySocketSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5182FACB26BBCDA300231C65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F904163D8E1F14B9711499DA /* Pods-AngrySocketSwift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XM9NMWX24Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AngrySocketSwift/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onnuriinfotek.AngrySocketSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5182FACD26BBCDA300231C65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0916F3D8F1F8B9357387A985 /* Pods-AngrySocketSwiftTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XM9NMWX24Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onnuriinfotek.AngrySocketSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AngrySocketSwift.app/AngrySocketSwift";
+			};
+			name = Debug;
+		};
+		5182FACE26BBCDA300231C65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ED5CB292BBC1867AF042C56 /* Pods-AngrySocketSwiftTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XM9NMWX24Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onnuriinfotek.AngrySocketSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AngrySocketSwift.app/AngrySocketSwift";
+			};
+			name = Release;
+		};
+		5182FAD026BBCDA300231C65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C79E4BA01FA76C7EB7ECBD9 /* Pods-AngrySocketSwift-AngrySocketSwiftUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XM9NMWX24Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onnuriinfotek.AngrySocketSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AngrySocketSwift;
+			};
+			name = Debug;
+		};
+		5182FAD126BBCDA300231C65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D325C5A5C2ED14377410E212 /* Pods-AngrySocketSwift-AngrySocketSwiftUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XM9NMWX24Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onnuriinfotek.AngrySocketSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AngrySocketSwift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5182FA9C26BBCDA200231C65 /* Build configuration list for PBXProject "AngrySocketSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5182FAC726BBCDA300231C65 /* Debug */,
+				5182FAC826BBCDA300231C65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5182FAC926BBCDA300231C65 /* Build configuration list for PBXNativeTarget "AngrySocketSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5182FACA26BBCDA300231C65 /* Debug */,
+				5182FACB26BBCDA300231C65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5182FACC26BBCDA300231C65 /* Build configuration list for PBXNativeTarget "AngrySocketSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5182FACD26BBCDA300231C65 /* Debug */,
+				5182FACE26BBCDA300231C65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5182FACF26BBCDA300231C65 /* Build configuration list for PBXNativeTarget "AngrySocketSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5182FAD026BBCDA300231C65 /* Debug */,
+				5182FAD126BBCDA300231C65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5182FA9926BBCDA200231C65 /* Project object */;
+}
