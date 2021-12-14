@@ -29,9 +29,9 @@ class ViewController: UIViewController {
         print(String(UnicodeScalar(40)))
         
         
-        SocketGateWay = TCPClient(address: "211.119.65.7", port: 32559)
+        SocketGateWay = TCPClient(address: "000.000.00.0", port: 32559)
         
-//        SocketGateWay.address = "211.119.65.7"
+//        SocketGateWay.address = "000.000.00.0"
 //        SocketGateWay.port =  32559
   
         print(AES256Util.decrypt(encoded: "UWzX6ic67YXJj3ZHja+WPPrB39TnxiU+SN4eke5tn74="))
@@ -74,9 +74,9 @@ class ViewController: UIViewController {
         sendPackettoServer(sendMessage: test4)
         
         print("==============================================")
-      //  specialDatasendTcp(ip: "211.119.65.7", port: 32559, stringData:  "J20211117105354814.ios60.92.27(", sendlogicType: 32300)
-//        specialDatasendTcp(ip: "211.119.65.7", port: 32563, stringData:  "6rpadminH3170162645052937", sendlogicType: 33010)
-        specialDatasendTcp(ip: "211.119.65.7", port: 32563, stringData:  "6rpadminH3170162646906977*1", sendlogicType: 33060)
+      //  specialDatasendTcp(ip: "000.000.00.0", port: 32559, stringData:  "J20211117105354814.ios60.92.27(", sendlogicType: 32300)
+//        specialDatasendTcp(ip: "000.000.00.0", port: 32563, stringData:  "6rpadminH3170162645052937", sendlogicType: 33010)
+        specialDatasendTcp(ip: "000.000.00.0", port: 32563, stringData:  "6rpadminH3170162646906977*1", sendlogicType: 33060)
         print("===================end========================")
     }
     func sendPackettoServer(sendMessage : String){
@@ -86,7 +86,7 @@ class ViewController: UIViewController {
 
 
     func pleaseConnectTCPWhat(stringData : String){
-        let addr = "211.119.65.7"//"mobile.activepost.co.kr"
+        let addr = "000.000.00.0"//"mobile.activepost.co.kr"
         let port =  32559//12559
         let encryptString : String = stringData
         let logicType : Int32 = 32050// 32300

@@ -12,7 +12,7 @@ import CommonCrypto
 
 class AES256Util {
     //키값 32바이트: AES256(24bytes: AES192, 16bytes: AES128)
-    private static let SECRET_KEY = "+CXu6KzgkUm?C4a=aSbRJFJh3$eCAkwT"//"01234567890123450123456789012345"
+    private static let SECRET_KEY = "01234567890123450123456789012345"
     private static var IV = "0000000000000000"//"0000000000000000"//0000/0000/0000/0000"0123456789012345"
     // 아니 저거 null이면 모두 0 인 값을 사용한다는데?
     
